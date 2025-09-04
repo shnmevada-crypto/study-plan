@@ -1,0 +1,8 @@
+{
+  "name": "study-plan-site",
+  "version": "1.0.0",
+  "dependencies": {
+    "node-ical": "^1.11.0",
+    "node-fetch": "^2.6.7"
+  }
+}

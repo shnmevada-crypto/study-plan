@@ -1,0 +1,6 @@
+[build]
+  publish = "static"
+  functions = "functions"
+
+[functions]
+  node_bundler = "esbuild"

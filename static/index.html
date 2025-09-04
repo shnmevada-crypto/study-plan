@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GCSE Study Plan — Interactive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">📘 GCSE Study Plan</div>
+      <div id="termDates"><strong>Term start:</strong> 4 Sep 2025</div>
+      <div class="links">
+        <a href="https://app.senecalearning.com/" target="_blank">Seneca Learning</a>
+        <a href="https://classroom.google.com/" target="_blank">Google Classroom</a>
+        <a href="https://www.satchelone.com/" target="_blank">Satchel One</a>
+        <a href="https://www.mathswatch.co.uk/" target="_blank">MathWatch</a>
+        <a href="https://outlook.office.com/" target="_blank">Outlook</a>
+        <a href="https://www.greenford.ealing.sch.uk/" target="_blank">Greenford High School</a>
+      </div>
+      <div id="weekLinks"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="search-wrap">
+          <input id="searchBox" placeholder="Search subjects, topics or resources..." />
+        </div>
+        <div class="top-actions">
+          <button id="todoToggle" title="Toggle To-Do">🗒️</button>
+          <div id="todayLabel" class="todayLabel"></div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="left-panel">
+          <div class="filters">
+            <button id="showPast">Past</button>
+            <button id="showToday">Today</button>
+            <button id="showFuture">Future</button>
+            <button id="showAll">All</button>
+          </div>
+          <div id="weeksContainer"></div>
+        </div>
+
+        <aside class="right-panel" id="rightPanel">
+          <div class="panel-card">
+            <h3>Resources</h3>
+            <ul id="resourcesList"></ul>
+          </div>
+          <div class="panel-card">
+            <h3>To-Do</h3>
+            <div id="todoList"></div>
+            <input id="newTodo" placeholder="Add a to-do and press Enter">
+          </div>
+          <div class="panel-card" id="schoolCalendarCard">
+            <h3>School Calendar — Year 11 & All students</h3>
+            <div id="calendarEvents">Loading...</div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
