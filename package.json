@@ -2,7 +2,7 @@
   "name": "study-plan-site",
   "version": "1.0.0",
   "dependencies": {
-    "node-ical": "^1.11.0",
-    "node-fetch": "^2.6.7"
+  "node-ical": "^0.20.1",
+  "node-fetch": "^2.6.7"
   }
 }
